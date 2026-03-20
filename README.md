@@ -14,7 +14,7 @@ Add `DebounceKit` to your `Package.swift` dependencies:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/BoyiLee-l/DebounceKit.git", from: "0.1.0")
+    .package(url: "https://github.com/BoyiLee-l/DebounceKit.git", from: "1.0.0")
 ]
 ```
 
@@ -79,14 +79,14 @@ For a patch release:
 git status
 swift test
 git push origin main
-git tag -a v0.1.1 -m "Release v0.1.1"
-git push origin v0.1.1
+git tag -a 1.0.1 -m "Release 1.0.1"
+git push origin 1.0.1
 ```
 
 ### Versioning guide
 
-- `v0.1.1`: bug fixes only
-- `v0.2.0`: backward-compatible feature additions
-- `v1.0.0`: first stable public API
+- `1.0.1`: bug fixes only
+- `1.1.0`: backward-compatible feature additions
+- `2.0.0`: breaking API changes
 
-Keep the tag format consistent. This repository already uses the `v` prefix, for example `v0.1.0`, so future releases should follow the same convention.
+Keep the tag format consistent. This repository now uses plain semantic version tags such as `1.0.0`, so future releases should follow the same convention.
